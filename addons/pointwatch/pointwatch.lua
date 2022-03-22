@@ -112,9 +112,12 @@ packet_handlers = {
     end,
     [0x061] = function(org)
         local p = packets.parse('incoming',org)
+        ]
         xp.current = p['Current EXP']
         xp.tnl = p['Required EXP']
+        xp.job = p['Main Job']
         xp.job_level = p['Main Job Level']
+        xp.sub_job = p['Sub Job']
         xp.sub_job_level = p['Sub Job Level']
         accolades.current = p['Unity Points']
         ep.current = p['Current Exemplar Points']
