@@ -81,7 +81,57 @@ other_table = {Crimson=10,Azure=10,Amber=10,Alabaster=10,Obsidian=20}
 dynamis_map = {[185]=city_table,[186]=city_table,[187]=city_table,[188]=city_table,
     [134]=other_table,[135]=other_table,[39]=other_table,[40]=other_table,[41]=other_table,[42]=other_table}
 
-    
+
+job_map = {
+    [1] = "Warrior",
+    [2] = "Monk",
+    [3] = "White Mage",
+    [4] = "Black Mage",
+    [5] = "Red Mage",
+    [6] = "Thief",
+    [7] = "Paladin",
+    [8] = "Dark Knight",
+    [9] = "Beastmaster",
+    [10] = "Bard",
+    [11] = "Ranger",
+    [12] = "Samurai",
+    [13] = "Ninja",
+    [14] = "Dragoon",
+    [15] = "Summoner",
+    [16] = "Blue Mage",
+    [17] = "Corsair",
+    [18] = "Puppetmaster",
+    [19] = "Dancer",
+    [20] = "Scholar",
+    [21] = "Geomancer",
+    [22] = "Rune Fencer",
+}
+
+job_abbr_map = {
+    [1] = "WAR",
+    [2] = "MNK",
+    [3] = "WHM",
+    [4] = "BLM",
+    [5] = "RDM",
+    [6] = "THF",
+    [7] = "PLD",
+    [8] = "DRK",
+    [9] = "BST",
+    [10] = "BRD",
+    [11] = "RNG",
+    [12] = "SAM",
+    [13] = "NIN",
+    [14] = "DRG",
+    [15] = "SMN",
+    [16] = "BLU",
+    [17] = "COR",
+    [18] = "PUP",
+    [19] = "DNC",
+    [20] = "SCH",
+    [21] = "GEO",
+    [22] = "RUN",
+}
+
 -- Not technically static, but sets the initial values for all features:
 function initialize()
     cp = {
@@ -101,7 +151,11 @@ function initialize()
         rate = 0,
         current = 0,
         tnl = 0,
+        job = 0,
+        job_abbr = 0,
         job_level = 0,
+        sub_job = 0,
+        sub_job_abbr = 0,
         sub_job_level = 0,
     }
     
